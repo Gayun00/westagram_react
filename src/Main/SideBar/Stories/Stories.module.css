@@ -1,0 +1,30 @@
+
+.story {
+  padding: var(--container-padding);
+  width: 100%;
+  border: 1px solid var(--border-grey);
+  background-color: var(--white);
+}
+
+.collapse {
+  height: 12rem;
+  overflow: hidden;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--border-grey-darker);
+  font-weight: 600;
+}
+
+.spread_button {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}

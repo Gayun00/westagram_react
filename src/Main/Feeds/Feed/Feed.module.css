@@ -1,0 +1,185 @@
+main {
+  display: flex;
+  width: 100%;
+}
+
+.feeds-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 60%;
+  padding: var(--container-padding);
+}
+
+.feeds {
+  width: 100%;
+}
+
+.feed {
+  margin-bottom: 3rem;
+  border: 1px solid var(--border-grey);
+  background-color: var(--white);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--item-padding) 0.8rem var(--item-padding) 0.8rem;
+  border-bottom: 1px solid var(--border-grey);
+}
+
+.uploader {
+  display: flex;
+  align-items: center;
+}
+
+.header_img_container {
+  width: var(--profile-img-container-L);
+  height: var(--profile-img-container-L);
+}
+
+.header_id {
+  margin-left: 1rem;
+}
+
+.feed__img_container {
+  height: 10rem;
+  overflow: hidden;
+}
+
+
+.img_content {
+  width: 100%;
+}
+
+.contents_wrap {
+  padding:  var(--item-padding) var(--container-padding) var(--item-padding) var(--container-padding);
+}
+
+.button_container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--item-padding);
+}
+
+.feed__button > i {
+  margin-right: var(--item-padding);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.people_who_like {
+  display: flex;
+  align-items: center;
+  margin: var(--item-padding) 0 var(--container-padding) 0;
+}
+
+.people_who_like_img {
+  width: var(--profile-img-container-S);
+  height: var(--profile-img-container-S);
+  border-radius: var(--profile-img-border-radius);
+}
+
+.people_who_like_comment {
+  margin-left: var(--item-padding);
+  font-size: 0.9rem;
+}
+
+.feed_more_text {
+  color: var(--border-grey-darker);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.comments {
+  margin-top: var(--container-padding);
+  list-style: none;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.comment__item {
+  margin-right: var(--item-padding);
+}
+
+.comment__id {
+  margin-right: var(--item-padding);
+  font-weight: 800;
+}
+
+.comment_input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  padding-left: var(--container-padding);
+  border-top: 1px solid var(--border-grey);
+}
+
+.comment_input_text {
+  flex-basis: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.comment_input_button {
+  flex-basis: 20%;
+  color: var(--light-blue);
+  cursor: pointer;
+}
+
+.comment__input > button:hover {
+  color: var(--blue);
+}
+
+.comment__delete-button {
+  cursor: pointer;
+}
+
+.feed__end {
+  width: 100%;
+  height: 20vh;
+}
+
+.profile_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: var(--profile-img-border-radius);
+  background: var(--profile-img-gradient);
+}
+
+.profile_img {
+  width: var(--profile-img-size);
+  height: var(--profile-img-size);
+  /* width: 2rem; */
+  /* height: 2rem; */
+  border: var(--profile-border) solid var(--white);
+  border-radius: var(--profile-img-border-radius);
+}
+
+.comment_input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  padding-left: var(--container-padding);
+  border-top: 1px solid var(--border-grey);
+}
+
+.comment_input_text {
+  flex-basis: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+}

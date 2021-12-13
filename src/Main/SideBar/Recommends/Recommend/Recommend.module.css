@@ -1,0 +1,41 @@
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.id, .follower {
+  margin-left: var(--container-padding)
+}
+
+.img {
+  width: var(--profile-img-container-M);
+  height: var(--profile-img-container-M);
+  border-radius: var(--profile-img-border-radius);
+}
+
+.follower {
+  color: var(--border-grey-darker);
+  font-size: 0.8rem;
+}
+
+.follow_button {
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.hide {
+  visibility: hidden;
+}
+
+footer {
+  margin-top: var(--container-padding);
+  color: var(--border-grey-darker);
+  font-size: 0.6rem;
+}

@@ -1,0 +1,24 @@
+.container {
+  margin-top: 1em;
+  padding: var(--container-padding);
+  width: 100%;
+  border: 1px solid var(--border-grey);
+  background-color: var(--white);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--border-grey-darker);
+}
+
+.spread_button {
+  font-weight: 700;
+}
+
+.list {
+  padding-top: 0.5rem;
+  list-style: none;
+}
