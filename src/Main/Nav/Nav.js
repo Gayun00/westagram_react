@@ -1,12 +1,14 @@
 import React from 'react'
 import styles from './Nav.module.css';
+import { AiFillSetting } from 'react-icons/ai'
+import { BsInstagram } from 'react-icons/bs'
 
 function Nav() {
   return (
     <nav>
     <span className={styles.logo_wrap}>
         <span className={styles.logo_icon}>
-            <i className="fab fa-instagram"></i>
+            <BsInstagram/>
         </span>
         <span className={styles.logo_text}>Instagram</span>
     </span>
@@ -40,7 +42,7 @@ function Nav() {
                 <p className={styles.my_item_text}>저장됨</p>
             </li>
             <li className={styles.my_item}>
-                <i className="fas fa-cog"></i>
+                <AiFillSetting/>
                 <p className={styles.my_item_text}>설정</p>
             </li>
             <div className={styles.my_logout}>로그아웃</div>

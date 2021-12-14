@@ -1,15 +1,22 @@
 import React from 'react'
 import Comment from './Comment/Comment';
 import styles from './Feed.module.css'
+import { BsSuitHeart } from 'react-icons/bs'
+import {BsBookmark} from 'react-icons/bs'
+import { FiShare2 } from 'react-icons/fi'
+import { FaRegCommentDots } from 'react-icons/fa'
 
 function Feed({feed}) {
   console.log(feed)
   function handleTextContent(text) {
     if(text.length > 30) {
         text = text.slice(0, 30);
-        return `
+        return(
+          <>
+            <p>{text}</p>
             <button class={styles.feed_more_text}>...더보기</button>
-        `
+          </>
+        )
     } else {
         return text;
     }
@@ -36,18 +43,18 @@ function Feed({feed}) {
         <div class={styles.button_container}>
           <span class="feed__buttons1">
             <button class="feed__button">
-              <i class="far fa-heart"></i>
+              <BsSuitHeart/>
             </button>
             <button class="feed__button">
-              <i class="far fa-comment"></i>
+              <FaRegCommentDots/>
             </button>
             <button class="feed__button">
-              <i class="far fa-share-square"></i>
+              <FiShare2/>
             </button>
           </span>
           <span class="feed__buttons2">
             <button class="feed__button">
-              <i class="far fa-bookmark"></i>
+              <BsBookmark/>
             </button>
           </span>
         </div>
@@ -55,7 +62,7 @@ function Feed({feed}) {
           <img src="images/profile-img2.jpg" alt="" class={styles.people_who_like_img}/>
           <p class={styles.people_who_like_comment} data-num="">{feed.likesCount[0]}님 외 {feed.likesCount.length}명이 좋아합니다.</p>
         </div>
-        {/* <div class={styles.textContent}>{handleTextContent(feed.textContent)}</div> */}
+        <div class={styles.textContent}>{handleTextContent(feed.textContent)}</div>
           <li class={styles.comments}>
             {feed.comment.map((com) => <Comment comment={com}/>)}
           </li>

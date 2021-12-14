@@ -6,9 +6,10 @@
 
 .comment {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   margin-top: 0.3rem;
+  margin: 0;
   font-size: 0.9rem;
 }
 
@@ -17,7 +18,7 @@
 }
 
 .comment__id {
-  /* margin-right: var(--item-padding); */
+  margin-right: var(--item-padding);
   margin-right: 1rem;
   font-weight: 800;
   background-color: wheat;
