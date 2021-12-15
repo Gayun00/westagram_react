@@ -1,20 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import { TiDelete } from 'react-icons/ti';
 import styles from './Comment.module.css'
 
 function Comment({comment}) {
-console.log(comment)
+
+  const [commentState, setCommentState] = useState({
+    commentId: comment.commentId,
+    commentText: comment.commentText
+  });
+
+  useEffect(() => {
+    setCommentState(comment)
+    console.log(commentState)
+  }, []);
+
   return (
-    <>
     <ul class={styles.comment}>
-      {/* <div class={styles.comment_item}> */}
-        <p class={styles.comment_id}>{comment.commentId}</p>
-        <p class={styles.comment_text}>{comment.commentText}</p>
-      {/* </div> */}
-      <button class={styles.delete_button}>
-        <i class="fas fa-times"></i>
+      <span class={styles.container}>
+        <p class={styles.id}>{comment.commentId}</p>
+        <span class={styles.text}>{comment.commentText}</span>
+      </span>
+      <button class={styles.delete}>
+        <TiDelete/>
       </button>
     </ul>
-    </>
   )
 }
 

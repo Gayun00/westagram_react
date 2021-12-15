@@ -94,54 +94,8 @@ main {
 
 .comments {
   margin-top: var(--container-padding);
+  /* width: 100%; */
   list-style: none;
-}
-
-.comment {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.3rem;
-  font-size: 0.9rem;
-}
-
-.comment__item {
-  margin-right: var(--item-padding);
-}
-
-.comment__id {
-  margin-right: var(--item-padding);
-  font-weight: 800;
-}
-
-.comment_input {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 3rem;
-  padding-left: var(--container-padding);
-  border-top: 1px solid var(--border-grey);
-}
-
-.comment_input_text {
-  flex-basis: 80%;
-  height: 100%;
-  border: none;
-  outline: none;
-}
-
-.comment_input_button {
-  flex-basis: 20%;
-  color: var(--light-blue);
-  cursor: pointer;
-}
-
-.comment__input > button:hover {
-  color: var(--blue);
-}
-
-.comment__delete-button {
-  cursor: pointer;
 }
 
 .feed__end {

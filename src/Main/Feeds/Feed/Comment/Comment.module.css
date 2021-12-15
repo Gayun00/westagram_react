@@ -1,35 +1,42 @@
 
-.comments {
+/* .comments {
   margin-top: var(--container-padding);
   list-style: none;
-}
+} */
 
 .comment {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
   margin-top: 0.3rem;
-  margin: 0;
-  font-size: 0.9rem;
+  /* width: 100%; */
+  font-size: 0.8rem;
 }
 
-.comment__item {
+.container {
+  display: flex;
   margin-right: var(--item-padding);
 }
 
-.comment__id {
+.comment_item > p:nth-child(1) {
+  margin: 0 0.5rem 0 0 ;
+  font-weight: 700;
+}
+
+.id{
   margin-right: var(--item-padding);
   margin-right: 1rem;
   font-weight: 800;
-  background-color: wheat;
 }
 
-.delete_button {
+.delete {
+  display: flex;
   flex-basis: 20%;
+  justify-content: flex-end;
   color: var(--light-blue);
   cursor: pointer;
 }
 
-.delete_button:hover {
+.delete:hover {
   color: var(--blue);
 }

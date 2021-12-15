@@ -1,6 +1,6 @@
 import React from 'react'
 import Comment from './Comment/Comment';
-import styles from './Feed.module.css'
+import styles from './Feed.module.css';
 import { BsSuitHeart } from 'react-icons/bs'
 import {BsBookmark} from 'react-icons/bs'
 import { FiShare2 } from 'react-icons/fi'
@@ -14,7 +14,7 @@ function Feed({feed}) {
         return(
           <>
             <p>{text}</p>
-            <button class={styles.feed_more_text}>...더보기</button>
+            <button dclass={styles.feed_more_text}>...더보기</button>
           </>
         )
     } else {
@@ -60,7 +60,7 @@ function Feed({feed}) {
         </div>
         <div class={styles.people_who_like}>
           <img src="images/profile-img2.jpg" alt="" class={styles.people_who_like_img}/>
-          <p class={styles.people_who_like_comment} data-num="">{feed.likesCount[0]}님 외 {feed.likesCount.length}명이 좋아합니다.</p>
+          <p class={styles.people_who_like_comment}>{feed.likesCount[0]}님 외 {feed.likesCount.length}명이 좋아합니다.</p>
         </div>
         <div class={styles.textContent}>{handleTextContent(feed.textContent)}</div>
           <li class={styles.comments}>

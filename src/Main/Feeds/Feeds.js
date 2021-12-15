@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Feed from './Feed/Feed'
-import feedData from '../../data/feed.json';
+import feedsData from '../../data/feed.json';
 import styles from './Feeds.module.css'
 
-function Feeds({feeds}) {
+function Feeds() {
+
+  const [feedsState, setFeedsState] = useState([]);
+
+  useEffect(() => {
+    setFeedsState(feedsData)
+  }, [])
+
+  // const feeds = feedData;
 
   return (
     <div className={styles.container}>
-      {feeds.map((data) => <Feed feed={data}/>)}
+      {feedsState.map((data) => <Feed feed = {data}/>)}
     </div>
   )
 }
